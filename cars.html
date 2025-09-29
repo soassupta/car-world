@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Car World-Cars</title>
+  <link rel="stylesheet" href="style/cars.css">
+</head>
+<body>
+  <!-- header  -->
+   <header>
+    <h1>Car World</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="cars.html">Cars</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+   </header>
+
+   <!-- search & filter  -->
+    <section class="controls">
+      <input type="text" id="search" placeholder="Search for a car...">
+      <div class="filters">
+     <button onclick="filterCars('all')">All</button>
+     <button onclick="filterCars('suv')">SUV</button>
+     <button onclick="filterCars('sedan')">Sedan</button>
+     <button onclick="filterCars('sports')">Sports</button>
+      </div>
+    </section>
+
+    <!-- cars grid  -->
+     <section class="cars" id="carList">
+  <div class="car" data-type="suv" data-name="Toyota Fortuner">
+    <img src="https://imgd.aeplcdn.com/664x374/n/cw/ec/44709/fortuner-exterior-right-front-three-quarter-21.jpeg?isig=0&q=80" alt="">
+    <h3>Toyota Fortuner</h3>
+    <p> Strong SUV with comfort and reliabilityfor all terrains.</p>
+  </div>
+
+  <div class="car" data-type="sedan" data-name="Honda Civic">
+    <img src="https://www.motorbiscuit.com/wp-content/uploads/2023/01/2023-Honda-Civic-Sedan-1.jpg" alt="">
+    <h3>Honda Civic</h3>
+    <p>Stylish sedan with modern featuresand fuel efficiency.</p>
+  </div>
+
+  <div class="car" data-type="sports" data-name="Ferrari 488">
+    <img src="https://tse4.mm.bing.net/th/id/OIP.cCPYeFsYVJ1KnW-6YLstUgHaEo?rs=1&pid=ImgDetMain&o=7&rm=3" alt="">
+    <h3>Ferrari 488</h3>
+    <p>High-performance sportscar with unmatched speedand luxury.</p>
+  </div>
+
+  <div class="car" data-type="sedan" data-name="BMW 5 Series">
+    <img src="https://img.cintamobil.com/2022/02/07/tYG8w8tv/bmw-5-series-sedan-gallery-image-individual-02-192-d74e.jpg" alt="">
+    <h3>BMW 5 Series</h3>
+    <p>German engineeringat its best with luxury and technology</p>
+  </div>
+
+  <div class="car" data-type="suv" data-name="Range Rover">
+    <img src="https://media.cdn-jaguarlandrover.com/api/v2/images/105958/w/1600/h/900.jpg" alt="">
+    <h3>Range Rover</h3>
+    <p> Luxury SUV with powerful performanceand premium design.</p>
+  </div>
+
+  <div class="car" data-type="sports" data-name="Lamborghini Huracan">
+    <img src="https://www.hindustantimes.com/ht-img/img/2023/06/23/1600x900/lamborghini_huracan_tecnica_1687503048681_1687503049058.jpg" alt="">
+    <h3>Lamborghini Huracan</h3>
+    <p>Iconic sportscar with aggressive look and extreme speed.</p>
+  </div>
+
+  <div class="car" data-type="suv" data-name="Hyundai Creta">
+    <img src="https://spn-sta.spinny.com/blog/20220228144639/Spinny-Assured-2021-Hyundai-Creta.jpg?compress=true&quality=80&w=1200&dpr=1" alt="">
+    <h3>Hyundai Creta</h3>
+    <p>Compact SUV with bold design and smart features.</p>
+  </div>
+
+  <div class="car" data-type="sedan" data-name="Mercedes-Benz C-class">
+    <img src="https://tse2.mm.bing.net/th/id/OIP.x0Rg9xavRsO8l2YJYZ2-gQHaEK?rs=1&pid=ImgDetMain&o=7&rm=3" alt="">
+    <h3>Mercedes-Benz C-class</h3>
+    <p>Luxury sedan with elegent design and advance tech.</p>
+  </div>
+
+  <div class="car" data-type="suv" data-name="Porsche 911">
+    <img src="https://tse2.mm.bing.net/th/id/OIP.3pPiDVm1jHGBFWk24TnQqwHaEK?rs=1&pid=ImgDetMain&o=7&rm=3" alt="">
+    <h3>Porsche 911</h3>
+    <p>Modern SUV offering great value and high tech features. </p>
+  </div>
+
+  <div class="car" data-type="sedan" data-name="Toyota Camry">
+    <img src="https://tse3.mm.bing.net/th/id/OIP.YgnrFfJVcAcknOolxeYVrwHaEK?rs=1&pid=ImgDetMain&o=7&rm=3" alt="">
+    <h3>Toyota Camry</h3>
+    <p>Reliable and comfortable sedan with hybrid option. </p>
+  </div>
+
+  <div class="car" data-type="sports" data-name="McLaren 720s">
+    <img src="https://tse3.mm.bing.net/th/id/OIP.3IwZ7HdNiRjI8bjt1ALEmQHaEK?rs=1&pid=ImgDetMain&o=7&rm=3" alt="">
+    <h3>McLaren 720s</h3>
+    <p>Super delivering unmatchedperfomance and design.</p>
+  </div>
+
+  <div class="car" data-type="suv" data-name="Kia Seltos">
+    <img src="https://tse4.mm.bing.net/th/id/OIP.hTfX-kP5VFQIglFc-rnGkgHaE8?rs=1&pid=ImgDetMain&o=7&rm=3" alt="">
+    <h3>Kia Seltos</h3>
+    <p>Modern SUV offering high tech features.</p>
+  </div>
+
+  
+
+     </section>
+     <footer>
+      <p>&copy; 2025 Car World | All Rights Reserved </p>
+     </footer>
+     <script src="js/cars.js"></script>
+</body>
+</html>
